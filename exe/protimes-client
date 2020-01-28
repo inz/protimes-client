@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'dotenv/load'
+require "protimes/client/cli"
+trap('SIGINT') { exit 128 }
+Protimes::Client::CLI.start
