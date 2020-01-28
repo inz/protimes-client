@@ -1,6 +1,6 @@
 # Protimes::Client
 
-Simple time tracking in your calendar, synchronized with [ProTimes](https://www.protimesapp.com).
+Simple time tracking in your calendar, synchronized with [ProTimes](https://protimesapp.herokuapp.com).
 
 ## Installation
 
@@ -27,12 +27,16 @@ Create a `.env` file and enter your credentials:
     EMAIL=user@example.com
     AUTH_TOKEN=add_token_here
 
+### Synchronize ProTimes Projects
+
 Synchronize your projects from ProTimes to initialize the mapping config. You would also run this command whenever you add or remove projects in ProTimes:
 
     $ bundle exec exe/protimes-client sync_config
 
 Inspect the default mapping config in `config.yaml`.
 For every project, you can specify a regular expression that will match entries in your calendar to associate them with projects in ProTimes. Only events that match one of the regular expressions will be transmitted to ProTimes.
+
+### Synchronize tagged Calendar Events
 
 Synchronize tagged events with ProTimes:
 
