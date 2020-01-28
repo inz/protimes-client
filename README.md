@@ -1,6 +1,6 @@
 # Protimes::Client
 
-Simple time tracking in your calendar, synchronized with https://protimesapp.com
+Simple time tracking in your calendar, synchronized with [ProTimes](https://www.protimesapp.com).
 
 ## Installation
 
